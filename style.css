@@ -1,0 +1,39 @@
+#wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#breeds{
+    padding: 20px 0 20px 0;
+    overflow-x: hidden;
+    white-space: nowrap;
+    flex:1;
+
+    transition: scrollLeft 0.5 ease-in-out;
+}
+
+#breeds div{
+    display: inline-block;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: green; 
+    cursor: pointer;
+    user-select: none;
+}
+
+#breeds div.isSelected{
+    background-color: blue;
+}
+
+#leftArrow,#rightArrow{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#images img{
+    height: 150px;
+    padding: 5px;
+}
